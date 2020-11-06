@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/settings_format_title">
+
+        <EditTextPreference
+            app:key="@string/setting_store_path"
+            app:title="@string/settings_store_path_title"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            android:title="@string/settings_image_quality_title"
+            app:defaultValue="95"
+            app:key="@string/settings_image_quality" />
+
+        <ListPreference
+            app:defaultValue="png"
+            app:entries="@array/image_formats"
+            app:entryValues="@array/image_formats_values"
+            app:key="@string/settings_image_format"
+            app:title="@string/settings_format_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

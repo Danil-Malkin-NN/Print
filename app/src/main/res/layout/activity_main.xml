@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/canvas_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/parent_layout"
+        app:layout_constraintBottom_toTopOf="@id/control_buttons"/>
+
+
+    <LinearLayout
+        android:id="@+id/control_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/brush_size" >
+
+        <Button
+            android:id="@+id/button_green"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_green_light"/>
+        <Button
+            android:id="@+id/button_green_dark"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_green_dark"/>
+        <Button
+            android:id="@+id/button_blue"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_blue_bright"/>
+        <Button
+            android:id="@+id/button_blue_light"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+        <Button
+            android:id="@+id/button_blue_dark"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_blue_dark"/>
+        <Button
+            android:id="@+id/button_white"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/white"/>
+        <Button
+            android:id="@+id/button_orange"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_orange_light"/>
+        <Button
+            android:id="@+id/button_orange_dark"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_orange_dark"/>
+
+        <Button
+            android:id="@+id/button_red"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/brush_size"
+        android:minHeight="40dp"
+        android:max="100"
+        android:progress="10"
+        app:layout_constraintBottom_toBottomOf="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--        <ImageButton-->
+<!--        android:id="@+id/button_white"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:srcCompat="@drawable/esey"-->
+<!--        android:backgroundTint="@android:color/white"/>-->
+
