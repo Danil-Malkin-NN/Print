@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Draw</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="setting_store_path">store_path </string>
+    <string name="settings_image_quality">image_quality</string>
+    <string name="settings_image_format">image_format</string>
+
+    <string name="settings_format_title">Сохранение изображения</string>
+    <string name="settings_store_path_title">Путь к каталогу сохранения файлов</string>
+    <string name="settings_image_quality_title">Качество изображения</string>
+</resources>
